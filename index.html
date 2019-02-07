@@ -27,18 +27,16 @@
     <header id="cabezote">
         <div class="container">
             <div class="row">
-                <div class="">
+                <div class="six columns u-pull-left">
                     <a id="icono" href="#">FOOSESHOES</a>
                 </div>
-                <div>
-                    <br>
+                <div class="six columns u-pull-right">
+                    <form id="busqueda">
+                        <input type="search" placeholder="    Buscar" id="buscar">
+                        <label id="lupa" class="fa fa-search"></label>
+                        <a id="registrar" href="#">LOGIN or REGISTER</a>
+                    </form>
                 </div>
-
-                <form id="busqueda">
-                    <input type="search" placeholder="    Buscar" id="buscar">
-                    <label id="lupa" class="fa fa-search"></label>
-                    <a id="registrar" href="#">LOGIN or REGISTER</a>
-                </form>
             </div>
         </div>         
     </header>
@@ -47,61 +45,157 @@
             <span class="fa fa-bars"></span>	
         </div>-->
 
-        <nav id="navegacion">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">About</a>
-            <a href="#">Pages</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+    <nav id="navegacion">
+        <div class="container">
+            <div class="row">
+                <div class="ten columns u-pull-left">
+                    <a href="#">Home</a>
+                    <a href="#">Products</a>
+                    <a href="#">About</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div id="carro" class="two columns u-pull-right">
+                    <!--<ul>
+                        <li class="submenu">-->
+                            <span class="fa fa-star" id="fa-star"></span>
+                            <span class="fa fa-shopping-cart" id="fa-carrito"></span>
+                            <!--<div id="carrito">                                
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
 
-            <div>
-                <br>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>-->
+                </div>
             </div>
+        </div>
+    </nav>
 
-            <div id="carro">
-                <!--<ul>
-                    <li class="submenu">-->
-                        <span class="fa fa-shopping-cart" id="fa-carrito"></span>
-                        <span class="fa fa-star" id="fa-star"></span>
-                        <!--<div id="carrito">                                
-                            <table id="lista-carrito" class="u-full-width">
-                                <thead>
-                                    <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-
-                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                        </div>
+    <div id="slide">
+        <div class="container">
+            <div class="row">
+                <div class="six columns u-pull-right">
+                    <div class="contenido-slide">
+                        <div></div>
+                        <h1>Pink Shoes 2019 Collection</h1>
+                        <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
+                        <span class="icon fa fa-eye"></span>
+                        <span class="icon fa fa-star"></span>
+                        <span class="icon fa fa-share-square"></span>
+                        <span class="icon fa fa-cart-arrow-down"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="btnSlide" class="twelve columns">
+                <ol id="paginacion">
+                    <li>
+                        <span class="fa fa-circle"></span>
                     </li>
-                </ul>-->
+                    <li>
+                        <span class="fa fa-circle"></span>
+                    </li>
+                    <li>
+                        <span class="fa fa-circle"></span>
+                    </li>
+                    <li>
+                        <span class="fa fa-circle"></span>
+                    </li>
+                    <li>
+                        <span class="fa fa-circle"></span>
+                    </li>
+                </ol>
             </div>
-        </nav>
-
-        <div id="slide">
-            <!--<span class="fa fa-eye"></span>-->
-            <!--<span class="fa fa-star"></span>-->
-            <!--<span class="fa fa-share-square"></span>-->
-            <!--<span class="icon fa fa-shopping-cart"></span>-->
         </div>
+    </div>
 
-        <div id="btnSlide"></div>
-
-        <div id="promo"></div>
-
-        <div id="tipos"></div>
-
-        <div id="lista-productos">
-            <div id="productos-uno"></div>
-
-            <div id="productos-dos"></div>
+    <div id="promo">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <ul>
+                        <li>Pink Shoes</li>
+                        <li>Anna Field</li>
+                        <li>Prada</li>
+                        <li>Casadei</li>
+                        <li>Mellow Yellow</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div id="tipos">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="./img/tipos01.png" class="imagen-tipo u-full-width">
+                </div>
+                <div class="four columns">
+                    <img src="./img/tipos02.png" class="imagen-tipo u-full-width">
+                </div>
+                <div class="four columns">
+                    <img src="./img/tipos03.png" class="imagen-tipo u-full-width">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lista-productos">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <div class="producto">
+                        <img src="./img/producto01.png" class="u-full-width">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="four columns">
+                        <div class="producto">
+                                <img src="./img/producto01.png" class="u-full-width">
+                                <div></div>
+                        </div>
+                </div>
+                <div class="four columns">
+                        <div class="producto">
+                                <img src="./img/producto01.png" class="u-full-width">
+                                <div></div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="four columns">
+                            <div class="producto">
+                                    <img src="./img/producto01.png" class="u-full-width">
+                                    <div></div>
+                            </div>
+                    </div>
+                    <div class="four columns">
+                            <div class="producto">
+                                    <img src="./img/producto01.png" class="u-full-width">
+                                    <div></div>
+                            </div>
+                    </div>
+                    <div class="four columns">
+                            <div class="producto">
+                                    <img src="./img/producto01.png" class="u-full-width">
+                                    <div></div>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
 
         <div id="texto-principal">
             <div></div>

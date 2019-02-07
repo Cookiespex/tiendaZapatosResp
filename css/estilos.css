@@ -13,8 +13,7 @@ body{
 CABEZOTE
 =============================================*/
 #cabezote{
-	height: 45px;
-	background: rgba(151, 72, 72, 0.5);
+	background: rgba(151, 72, 131, 0.5);
 }
 header a#icono{
 	font-family: 'Oswald', sans-serif; 
@@ -22,15 +21,19 @@ header a#icono{
 	color: #57c5a0; 
 	float: left;
 	font-size: 30px;
-	padding: 0px 20px;
+	max-height: 45px;
 }
-header form#busqueda{
-	padding: 10px;
+header form {
+	max-height: 45px;
+	padding: 0rem;
+	margin: 0rem;
 }
 header form input#buscar{
 	background: #2e2e2e;
 	border: 0px;
 	height: 20px;
+	padding: 0rem;
+	margin: 1.2rem;
 }
 header form a#registrar, #lupa{
 	color: #6b6b6b;
@@ -40,7 +43,6 @@ header form a#registrar, #lupa{
 BARRA DE NAVEGACIÓN
 =============================================*/
 #navegacion{
-	height: 60px;
 	background: rgba(10, 255, 141, 0.5);
 }
 #navegacion a{
@@ -48,24 +50,45 @@ BARRA DE NAVEGACIÓN
 	line-height: 60px;
 	padding: 0px 30px;
 }
-#navegacion #carro{
-	float: right;
+#navegacion #carro span{
 	line-height: 60px;
-	padding: 0px 30px;
+	color: #6b6b6b;
+	padding: 0px 20px;
 }
 /*=============================================
 SLIDE
 =============================================*/
 #slide{
-	height: 461px;
+	/*background-image: url(../img/slide01.png) ;*/
+	height: 483px;
 	background: rgba(10, 67, 141, 0.5);
 }
-/*=============================================
-BOTONERA SLIDE
-=============================================*/
-#btnSlide{
-	height: 22px;
-	background: rgba(194, 66, 233, 0.5);
+.icon{
+	background: white;
+	color: #8d8d8d;
+	width: 2.5rem;
+	height: 2.5rem;
+	text-align: center;
+}
+.contenido-slide{
+	margin-top: 6.25rem;
+}
+#slide p{
+	font-size: 2.2rem;
+}
+#slide h1{
+	font-size: 4rem;
+}
+#slide #btnSlide #paginacion{
+	margin-top: 12rem;
+	text-align: center;
+	bottom: 0.6rem;
+	z-index: 1;
+}
+#slide #btnSlide #paginacion li{
+	float: left;
+	text-align: center;
+	margin: 0px;
 }
 /*=============================================
 LO MAS COMPRADO
@@ -74,6 +97,12 @@ LO MAS COMPRADO
 	height: 68px;
 	background: rgba(235, 231, 16, 0.5);
 }
+#promo ul li{
+	color: #acacac;
+	float: left;
+	padding: 0px 30px;
+	margin: 2.2rem;
+}
 /*=============================================
 TIPOS DE OFERTAS
 =============================================*/
@@ -81,18 +110,19 @@ TIPOS DE OFERTAS
 	height: 230px;
 	background: rgba(235, 16, 16, 0.5);
 }
+#tipos .row{
+	padding-top: 2.5rem;
+}
 /*=============================================
 LISTA DE PRODUCTOS
 =============================================*/
-/*PRODUCTOS UNO*/
-#productos-uno{
-	height: 383px;
+#lista-productos{
+	height: 766px;
 	background: rgba(7, 11, 241, 0.5);
 }
-/*PRODUCTOS DOS*/
-#productos-dos{
-	height: 383px;
-	background: rgba(1, 187, 17, 0.5);
+#lista-productos .row{
+	padding-top: 8.7rem;
+	padding-bottom: 5.5rem;
 }
 /*=============================================
 CUADROS CON TEXTOS
