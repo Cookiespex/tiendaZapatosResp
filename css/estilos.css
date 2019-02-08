@@ -45,10 +45,11 @@ BARRA DE NAVEGACIÓN
 #navegacion{
 	background: rgba(10, 255, 141, 0.5);
 }
-#navegacion a{
+#navegacion #principal a{
 	color: #242424;
 	line-height: 60px;
 	padding: 0px 30px;
+	font-size: 1.6rem;
 }
 #navegacion #carro span{
 	line-height: 60px;
@@ -121,8 +122,13 @@ LISTA DE PRODUCTOS
 	background: rgba(7, 11, 241, 0.5);
 }
 #lista-productos .row{
-	padding-top: 8.7rem;
 	padding-bottom: 5.5rem;
+}
+#lista-productos h4{
+	padding-top: 2.5rem;
+}
+#lista-productos .boton{
+	margin-top: 2.5rem;
 }
 /*=============================================
 CUADROS CON TEXTOS
@@ -131,12 +137,53 @@ CUADROS CON TEXTOS
 	height: 235px;
 	background: rgba(204, 37, 15, 0.5);
 }
+#texto-principal .cuadrado{
+	padding: 1.5rem 0rem;
+	max-height: 235px;
+}
+#texto-principal .cuadro{
+	padding: 1.5rem;
+	background: rgba(255, 255, 255, 0.5);
+}
+#texto-principal h2{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+#texto-principal h6{
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+#texto-principal p{
+	font-size: 1.2rem;
+	margin: 0;
+}
 /*=============================================
 CUADROS CON TEXTOS DOS
 =============================================*/
 #texto-secundario{
 	height: 246px;
 	background: rgba(241, 238, 7, 0.5);
+}
+#texto-secundario .cuadrado-negro{
+	padding-top: 4.7rem;
+	max-height: 246px;
+}
+#texto-secundario p{
+	text-align: justify;
+	font-size: 1.2rem;
+	margin: 0;
+	color: #9e9e9e;
+}
+#texto-secundario h2{
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #9e9e9e;
+}
+#texto-secundario .fotos{
+	width: 76px;
+	height: 56px;
+	float: left;
+	margin: 4px;
 }
 /*=============================================
 CONTACTENOS
@@ -145,10 +192,56 @@ CONTACTENOS
 	height: 119px;
 	background: rgba(241, 7, 221, 0.5);
 }
+#contactenos form{
+	padding-top: 3.5rem;
+	margin: 0;
+}
+#contactenos form input#email{
+	background: #2e2e2e;
+	border: 0;
+	border-radius: 0;
+    margin-bottom: 0;
+}
+#contactenos form #flecha{
+	position: absolute;
+	color: #2e2e2e;
+	font-size: 24px;
+	background: #7d7d7d;
+	width: 37px;
+	height: 37px;
+	text-align: center;
+	padding-top: 6px;
+	font-weight: bold;
+}
+#contactenos .redes{
+	padding-top: 3.5rem;
+	margin: 0;
+}
+#contactenos ul, li{
+	margin-bottom: 0;
+}
+#contactenos .redes ul li a{
+	float: left;
+	margin: 4px;
+	font-size: 24px;
+	color: #7d7d7d;
+	width: 38px;
+	height: 36px;
+	text-align: center;
+	background: #2e2e2e;
+}
 /*=============================================
 FOOTER
 =============================================*/
 footer{
 	height: 89px;
 	background: rgba(7, 194, 241, 0.5);
+}
+.footer{
+	padding: 2.5rem;
+	color: #acacac;
+	font-size: 1.2rem;
+}
+.footer #secundario a{
+	color: #acacac;
 }
