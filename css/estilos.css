@@ -6,14 +6,11 @@
 	font-family: 'Open Sans', sans-serif;
 	box-sizing: border-box;
 }
-body{
-	background: url(../img/fondoimg.jpg) no-repeat;
-}
 /*=============================================
 CABEZOTE
 =============================================*/
 #cabezote{
-	background: rgba(151, 72, 131, 0.5);
+	background: #242424;
 }
 header a#icono{
 	font-family: 'Oswald', sans-serif; 
@@ -34,6 +31,8 @@ header form input#buscar{
 	height: 20px;
 	padding: 0rem;
 	margin: 1.2rem;
+	color: #6b6b6b;
+	padding: 6px;
 }
 header form a#registrar, #lupa{
 	color: #6b6b6b;
@@ -43,7 +42,7 @@ header form a#registrar, #lupa{
 BARRA DE NAVEGACIÓN
 =============================================*/
 #navegacion{
-	background: rgba(10, 255, 141, 0.5);
+	background: #ffffff;
 }
 #navegacion #principal a{
 	color: #242424;
@@ -51,28 +50,58 @@ BARRA DE NAVEGACIÓN
 	padding: 0px 30px;
 	font-size: 1.6rem;
 }
+#navegacion #carro ul{
+	margin: 0;
+}
+#navegacion #carro ul li{
+	float: left;
+}
 #navegacion #carro span{
 	line-height: 60px;
 	color: #6b6b6b;
 	padding: 0px 20px;
 }
+.submenu{
+	position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.borrar-curso {
+    background-color: red;
+    border-radius: 40%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/*
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}*/
 /*=============================================
 SLIDE
 =============================================*/
 #slide{
-	/*background-image: url(../img/slide01.png) ;*/
-	height: 483px;
-	background: rgba(10, 67, 141, 0.5);
-}
-.icon{
-	background: white;
-	color: #8d8d8d;
-	width: 2.5rem;
-	height: 2.5rem;
-	text-align: center;
-}
-.contenido-slide{
-	margin-top: 6.25rem;
+	position:relative;
+	margin:auto;
+	width: 100%;
+	overflow: hidden;
 }
 #slide p{
 	font-size: 2.2rem;
@@ -80,62 +109,100 @@ SLIDE
 #slide h1{
 	font-size: 4rem;
 }
-#slide #btnSlide #paginacion{
-	margin-top: 12rem;
-	text-align: center;
-	bottom: 0.6rem;
-	z-index: 1;
+#slide ul{
+	position:relative;
+	left:0%;
+	margin:auto;
+	height:auto;
+	width:400%;
+	clear:both;
+	display: table;
 }
-#slide #btnSlide #paginacion li{
-	float: left;
+#slide ul li{
+	position: relative;
+	float:left;
+	width: 25%;
+}
+#slide #paginacion{
+	position: absolute;
+	width:100%;
+	margin:auto;
 	text-align: center;
-	margin: 0px;
+	bottom:10px;
+	left:0;
+	z-index:1;
+}
+#slide #paginacion li{
+	display:inline-block;
+	margin:0px 5px;
+	cursor:pointer;
+	opacity:.5;
+	color:white;
+	text-shadow:0px 0px 5px #333;
+}
+#slide #paginacion li:first-child{
+	opacity:1;
+}
+#slide ul li .contenido-slide{
+	position: absolute;
+	z-index: 1;
+	bottom: 90px;
+}
+.icon{
+	background: white;
+	color: #8d8d8d;
+	width: 2.5rem;
+	height: 2.5rem;
+	text-align: center;
+	padding-top: 5px;
 }
 /*=============================================
 LO MAS COMPRADO
 =============================================*/
 #promo{
-	height: 68px;
-	background: rgba(235, 231, 16, 0.5);
+	background: #2e2e2e;
 }
 #promo ul li{
 	color: #acacac;
 	float: left;
 	padding: 0px 30px;
-	margin: 2.2rem;
+	margin: 2.8rem;
 }
 /*=============================================
 TIPOS DE OFERTAS
 =============================================*/
 #tipos{
-	height: 230px;
-	background: rgba(235, 16, 16, 0.5);
+	background: #242424;
 }
 #tipos .row{
 	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
 }
 /*=============================================
 LISTA DE PRODUCTOS
 =============================================*/
 #lista-productos{
-	height: 766px;
-	background: rgba(7, 11, 241, 0.5);
+	background: #ebe7df;
 }
 #lista-productos .row{
-	padding-bottom: 5.5rem;
+	padding-bottom: 7.5rem;
 }
 #lista-productos h4{
 	padding-top: 2.5rem;
 }
 #lista-productos .boton{
 	margin-top: 2.5rem;
+	color: #bfb9ab;
+}
+#linea1{
+	margin: 0;
+	border: 1px solid #bfb9ab;
 }
 /*=============================================
 CUADROS CON TEXTOS
 =============================================*/
 #texto-principal{
-	height: 235px;
-	background: rgba(204, 37, 15, 0.5);
+	background: #ebe7df;
 }
 #texto-principal .cuadrado{
 	padding: 1.5rem 0rem;
@@ -161,11 +228,11 @@ CUADROS CON TEXTOS
 CUADROS CON TEXTOS DOS
 =============================================*/
 #texto-secundario{
-	height: 246px;
-	background: rgba(241, 238, 7, 0.5);
+	background: #242424;
 }
 #texto-secundario .cuadrado-negro{
 	padding-top: 4.7rem;
+	padding-bottom: 4.7rem;
 	max-height: 246px;
 }
 #texto-secundario p{
@@ -185,12 +252,19 @@ CUADROS CON TEXTOS DOS
 	float: left;
 	margin: 4px;
 }
+#linea2{
+	margin: 0;
+	color: #1c1c1c;
+	border: 1px solid #1c1c1c;
+}
 /*=============================================
 CONTACTENOS
 =============================================*/
 #contactenos{
-	height: 119px;
-	background: rgba(241, 7, 221, 0.5);
+	background: #242424;
+}
+#contactenos .row{
+	padding-bottom: 3.5rem;
 }
 #contactenos form{
 	padding-top: 3.5rem;
@@ -234,8 +308,7 @@ CONTACTENOS
 FOOTER
 =============================================*/
 footer{
-	height: 89px;
-	background: rgba(7, 194, 241, 0.5);
+	background: #2e2e2e;
 }
 .footer{
 	padding: 2.5rem;
