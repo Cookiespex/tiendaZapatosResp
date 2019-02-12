@@ -72,7 +72,7 @@ BARRA DE NAVEGACIÓN
     position: absolute;
     right:0;
     top:100%;
-    z-index: 1;
+    z-index: 2;
     background-color: white;
     padding: 20px;
     min-height: 400px;
@@ -113,20 +113,20 @@ SLIDE
 	position:relative;
 	left:0%;
 	margin:auto;
-	height:auto;
-	width:400%;
+	height: auto;
+	width:300%;
 	clear:both;
 	display: table;
 }
 #slide ul li{
 	position: relative;
 	float:left;
-	width: 25%;
+	width: 33.33%;
 }
 #slide #paginacion{
 	position: absolute;
 	width:100%;
-	margin:auto;
+	margin: auto;
 	text-align: center;
 	bottom:10px;
 	left:0;
@@ -178,6 +178,37 @@ TIPOS DE OFERTAS
 	padding-top: 2.5rem;
 	padding-bottom: 2.5rem;
 }
+#tipos .tip{
+	overflow: hidden;
+}
+#tipos .tip .imagen{
+	cursor:pointer;
+	transition:.6s;
+
+	transform: scale(1);
+	transition: all 500ms ease-in-out;
+}
+#tipos .tip .imagen:hover{
+	transition:.6s;
+	opacity: .3;
+
+	transform: scale(1.2);
+}
+#tipos .tip a:hover{
+	transition:.6s;
+	opacity: .8;
+}
+#tipos a{
+	position: absolute;
+	z-index: 1;
+	background: rgba(0,0,0,0.7);
+	color: white;
+	text-align: center;
+	font-size: 22px;
+	padding: 10px 20px;
+	bottom: 90px;
+	width: 30.65%;
+}
 /*=============================================
 LISTA DE PRODUCTOS
 =============================================*/
@@ -185,14 +216,44 @@ LISTA DE PRODUCTOS
 	background: #ebe7df;
 }
 #lista-productos .row{
-	padding-bottom: 7.5rem;
+	padding-bottom: 3.5rem;
 }
 #lista-productos h4{
-	padding-top: 2.5rem;
+	padding-top: 1.5rem;
 }
 #lista-productos .boton{
-	margin-top: 2.5rem;
+	margin-top: 1.5rem;
 	color: #bfb9ab;
+}
+#lista-productos .producto{
+	background: white;
+}
+#lista-productos hr{
+	margin: 0;
+	color: #bfb9ab;
+}
+#lista-productos center{
+	width: 100%;   
+	transition: all 500ms ease-in-out;
+	opacity: 1;
+}
+#lista-productos center:hover{
+	transform:translate(0px);
+	opacity: 1;
+}
+.info-producto{
+	width: 100%;   
+	transition: all 500ms ease-in-out;
+	opacity: 0;
+}
+#lista-productos .info-producto:hover{
+	transform:translate(0px,-20px);
+	opacity: 1;
+}
+.lista-items{
+	margin-top: 2px; 
+	text-align: center;
+	background: white;
 }
 #linea1{
 	margin: 0;
@@ -246,11 +307,19 @@ CUADROS CON TEXTOS DOS
 	font-weight: bold;
 	color: #9e9e9e;
 }
-#texto-secundario .fotos{
+#texto-secundario #galeria ul li img{
 	width: 76px;
 	height: 56px;
 	float: left;
 	margin: 4px;
+}
+#texto-secundario #galeria ul li img{
+	cursor:pointer;
+	transition:.6s;
+}
+#texto-secundario #galeria ul li img:hover{
+	transition:.6s;
+	opacity: .3;
 }
 #linea2{
 	margin: 0;
@@ -303,6 +372,21 @@ CONTACTENOS
 	height: 36px;
 	text-align: center;
 	background: #2e2e2e;
+}
+#contactenos .redes ul li:first-child a:hover{
+	background: rgba(2, 29, 187);
+}
+#contactenos .redes ul li:nth-child(2) a:hover{
+	background: rgb(4, 208, 235);
+}
+#contactenos .redes ul li:nth-child(3) a:hover{
+	background: rgb(228, 5, 35);
+}
+#contactenos .redes ul li:nth-child(4) a:hover{
+	background: rgb(2, 112, 214);
+}
+#contactenos .redes ul li:last-child a:hover{
+	background: rgb(0, 90, 8);
 }
 /*=============================================
 FOOTER

@@ -41,7 +41,7 @@
         </div>         
     </header>
 
-        <!--<div id="btnMovil" class="col-lg-0 col-md-0 col-sm-0 col-xs-12">	
+        <!--<div id="btnMovil" class="twelve columns">	
             <span class="fa fa-bars"></span>	
         </div>-->
 
@@ -83,10 +83,25 @@
         </div>
     </div>
 
-    <div id="slide" class="row">
+    <div id="slide">
+        <div class="row">
             <ul>
                 <li>
-                    <img src="img/slide01.png" alt="" class="u-full-width">
+                    <img src="img/slide01.png" class="u-full-width">
+                    <div class="six columns u-pull-right">
+                        <div class="contenido-slide">
+                            <div></div>
+                            <h1>Pink Shoes 2019 Collection</h1>
+                            <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
+                            <span class="icon fa fa-eye"></span>
+                            <span class="icon fa fa-star"></span>
+                            <span class="icon fa fa-share-square"></span>
+                            <span class="icon fa fa-cart-arrow-down"></span>
+                        </div>
+                    </div>
+                </li>             
+                <li>
+                    <img src="img/slide02.png" class="u-full-width">
                     <div class="six columns u-pull-right">
                         <div class="contenido-slide">
                             <div></div>
@@ -100,35 +115,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="img/slide02.png" alt="" class="u-full-width">
-                    <div class="six columns u-pull-right">
-                        <div class="contenido-slide">
-                            <div></div>
-                            <h1>Pink Shoes 2019 Collection</h1>
-                            <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
-                            <span class="icon fa fa-eye"></span>
-                            <span class="icon fa fa-star"></span>
-                            <span class="icon fa fa-share-square"></span>
-                            <span class="icon fa fa-cart-arrow-down"></span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/slide03.png" alt="" class="u-full-width">
-                    <div class="six columns u-pull-right">
-                        <div class="contenido-slide">
-                            <div></div>
-                            <h1>Pink Shoes 2019 Collection</h1>
-                            <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
-                            <span class="icon fa fa-eye"></span>
-                            <span class="icon fa fa-star"></span>
-                            <span class="icon fa fa-share-square"></span>
-                            <span class="icon fa fa-cart-arrow-down"></span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/slide04.png" alt="" class="u-full-width">
+                    <img src="img/slide03.png" class="u-full-width">
                     <div class="six columns u-pull-right">
                         <div class="contenido-slide">
                             <div></div>
@@ -142,21 +129,12 @@
                     </div>
                 </li>
             </ul>
-
             <ol id="paginacion">
-                <li item="1">
-                    <span class="fa fa-circle"></span>
-                </li>
-                <li item="2">
-                    <span class="fa fa-circle"></span>
-                </li>
-                <li item="3">
-                    <span class="fa fa-circle"></span>
-                </li>
-                <li item="4">
-                    <span class="fa fa-circle"></span>
-                </li>
+                <li item="1"><span class="fa fa-circle"></span></li>
+                <li item="2"><span class="fa fa-circle"></span>  </li>
+                <li item="3"><span class="fa fa-circle"></span></li>
             </ol>
+        </div>
     </div>
 
     <div id="promo">
@@ -178,14 +156,17 @@
     <div id="tipos">
         <div class="container">
             <div class="row">
-                <div class="four columns">
-                    <img>
+                <div class="tip four columns">
+                    <img src="img/tipos01.png" class="imagen u-full-width">
+                    <a href="#">ON SALE</a>
                 </div>
-                <div class="four columns">
-                    <img>
+                <div class="tip four columns">
+                    <img src="img/tipos02.png" class="imagen u-full-width">
+                    <a href="#">SPECIAL OFFERS</a>
                 </div>
-                <div class="four columns">
-                    <img>
+                <div class="tip four columns">
+                    <img src="img/tipos03.png" class="imagen u-full-width">
+                    <a href="#">MUST HAVE</a>
                 </div>
             </div>
         </div>
@@ -195,50 +176,96 @@
         <div class="container">
             <div class="twelve columns">
                 <h4 id="encabezado" class="encabezado u-pull-left">New arrivals on FooseShoes</h4>
-                <button class="boton u-pull-right">Show All</button>
+                <a href="#"><button class="boton u-pull-right">Show All</button></a>
             </div>
             <div class="row">
                 <div class="four columns">
-                    <div class="producto">
-                        <img>
-                        <div></div>
+                    <div id="producto" class="producto">
+                        <img src="img/producto01.png" class="img u-full-width">
+                        <hr>
+                        <center>Event&Odd</center>
+                        <div id="info-producto" class="info-producto">
+                            <ul class="lista-items">
+                                <span class="icon fa fa-eye"></span>
+                                <span class="icon fa fa-star"></span>
+                                <span class="icon fa fa-share-square"></span>
+                                <span class="icon fa fa-cart-arrow-down"></span>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="four columns">
-                        <div class="producto">
-                            <img>
-                            <div></div>
+                    <div id="producto" class="producto">
+                        <img src="img/producto01.png" class="img u-full-width">
+                        <hr>
+                        <div id="info-producto"  class="info-producto">
+                            <center>Event&Odd</center>
+                            <ul class="lista-items">
+                                <span class="icon fa fa-eye"></span>
+                                <span class="icon fa fa-star"></span>
+                                <span class="icon fa fa-share-square"></span>
+                                <span class="icon fa fa-cart-arrow-down"></span>
+                            </ul>
                         </div>
+                    </div>
                 </div>
                 <div class="four columns">
-                        <div class="producto">
-                            <img>
-                            <div></div>
+                    <div id="producto" class="producto">
+                         <img src="img/producto01.png" class="u-full-width">
+                        <hr>
+                        <div id="info-producto"  class="info-producto">
+                            <ul class="lista-items">
+                                <center>Event&Odd</center>
+                                <span class="icon fa fa-eye"></span>
+                                <span class="icon fa fa-star"></span>
+                                <span class="icon fa fa-share-square"></span>
+                                <span class="icon fa fa-cart-arrow-down"></span>
+                            </ul>
                         </div>
+                    </div>
                 </div>
             </div>
             <div class="twelve columns">
                     <h4 id="encabezado" class="encabezado u-pull-left">Best sellers of the month</h4>
-                    <button class="boton u-pull-right">Show All</button>
+                    <a href="#"><button class="boton u-pull-right">Show All</button></a>
             </div>
             <div class="row">
-                    <div class="four columns">
-                            <div class="producto">
-                                <img>
-                                <div></div>
-                            </div>
-                    </div>
-                    <div class="four columns">
-                            <div class="producto">
-                                <div></div>
-                            </div>
-                    </div>
-                    <div class="four columns">
-                            <div class="producto">
-                                <div></div>
-                            </div>
+                <div class="four columns">
+                    <div id="producto" class="producto">
+                        <img src="img/producto01.png" class="u-full-width">
+                        <hr>
+                        <div id="info-producto"  class="info-producto">
+                            <center>Event&Odd</center>
+                            <ul class="lista-items">
+                                <span class="icon fa fa-eye"></span>
+                                <span class="icon fa fa-star"></span>
+                                <span class="icon fa fa-share-square"></span>
+                                <span class="icon fa fa-cart-arrow-down"></span>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="four columns">
+                    <div id="producto" class="producto">
+                        <img src="img/producto01.png" class="u-full-width">
+                        <hr>
+                        <div id="info-producto"  class="info-producto">
+                            <center>Event&Odd</center>
+                            <ul class="lista-items"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div id="producto" class="producto">
+                        <img src="img/producto01.png" class="u-full-width">
+                        <hr>
+                        <div id="info-producto"  class="info-producto">
+                            <center>Event&Odd</center>
+                            <ul class="lista-items"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -296,9 +323,16 @@
                     </div>
                 </div>
                 <div class="cuadrado-negro four columns">
-                    <div class="galeria cuadro-negro">
+                    <div id="galeria" class="galeria cuadro-negro">
                         <h2>FLICKR WIDGET</h2>
-                        <ul></ul>
+                        <ul>
+                            <li><img src="img/galeria01.png" class="u-full-width"></li>
+                            <li><img src="img/galeria02.png" class="u-full-width"></li>
+                            <li><img src="img/galeria03.png" class="u-full-width"></li>
+                            <li><img src="img/galeria04.png" class="u-full-width"></li>
+                            <li><img src="img/galeria05.png" class="u-full-width"></li>
+                            <li><img src="img/galeria06.png" class="u-full-width"></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -360,7 +394,9 @@
         </div>
     </footer>
 
-    <script src="js/app.js"></script>   
+    <script src="js/slide.js"></script>
+    <script src="js/productos.js"></script> 
+    <script src="js/galeria.js"></script>   
 
 </body>
 </html>
