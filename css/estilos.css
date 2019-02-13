@@ -6,12 +6,10 @@
 	font-family: 'Open Sans', sans-serif;
 	box-sizing: border-box;
 }
-/*=============================================
-CABEZOTE
+/*CABEZOTE
 =============================================*/
-#cabezote{
-	background: #242424;
-}
+#cabezote{ background: #242424; }
+
 header a#icono{
 	font-family: 'Oswald', sans-serif; 
 	font-weight: 100; 
@@ -21,7 +19,6 @@ header a#icono{
 	max-height: 45px;
 }
 header form {
-	max-height: 45px;
 	padding: 0rem;
 	margin: 0rem;
 }
@@ -38,35 +35,37 @@ header form a#registrar, #lupa{
 	color: #6b6b6b;
 	font-size: 13px;
 }
-/*=============================================
-BARRA DE NAVEGACIÓN
-=============================================*/
-#navegacion{
-	background: #ffffff;
+header #btnMovil span{
+	width:40px;
+	text-align: center;
+	padding:8px 0px;
+	margin:5px;
+	background:white;
+	cursor: pointer;
 }
+/*BARRA DE NAVEGACIÓN
+=============================================*/
+#navegacion{ background: #ffffff; }
 #navegacion #principal a{
 	color: #242424;
 	line-height: 60px;
 	padding: 0px 30px;
 	font-size: 1.6rem;
+	text-align: center;
 }
-#navegacion #carro ul{
-	margin: 0;
-}
-#navegacion #carro ul li{
-	float: left;
-}
+#navegacion #carro ul{ margin: 0; }
+
+#navegacion #carro ul li{ float: left; }
+
 #navegacion #carro span{
 	line-height: 60px;
 	color: #6b6b6b;
 	padding: 0px 20px;
 }
-.submenu{
-	position: relative;
-}
-.submenu #carrito{
-    display: none;
-}
+.submenu{ position: relative; }
+
+.submenu #carrito{ display: none; }
+
 .submenu:hover #carrito{
     display: block;
     position: absolute;
@@ -78,7 +77,7 @@ BARRA DE NAVEGACIÓN
     min-height: 400px;
     min-width: 300px;
 }
-.borrar-curso {
+.borrar-producto {
     background-color: red;
     border-radius: 40%;
     padding: 5px 10px;
@@ -86,16 +85,14 @@ BARRA DE NAVEGACIÓN
     color: white;
     font-weight: bold;
 }
-/*
 .vacio {
     padding: 10px;
     background-color: crimson;
     text-align: center;
     border-radius: 10px;
     color: white;
-}*/
-/*=============================================
-SLIDE
+}
+/*SLIDE
 =============================================*/
 #slide{
 	position:relative;
@@ -103,11 +100,13 @@ SLIDE
 	width: 100%;
 	overflow: hidden;
 }
-#slide p{
-	font-size: 2.2rem;
-}
 #slide h1{
 	font-size: 4rem;
+	color: #242424;
+}
+#slide p{
+	font-size: 2.2rem;
+	color: #383837;
 }
 #slide ul{
 	position:relative;
@@ -140,9 +139,8 @@ SLIDE
 	color:white;
 	text-shadow:0px 0px 5px #333;
 }
-#slide #paginacion li:first-child{
-	opacity:1;
-}
+#slide #paginacion li:first-child{ opacity:1; }
+
 #slide ul li .contenido-slide{
 	position: absolute;
 	z-index: 1;
@@ -156,42 +154,35 @@ SLIDE
 	text-align: center;
 	padding-top: 5px;
 }
-/*=============================================
-LO MAS COMPRADO
+/*LO MAS COMPRADO
 =============================================*/
-#promo{
-	background: #2e2e2e;
-}
+#promo{ background: #2e2e2e; }
+
 #promo ul li{
 	color: #acacac;
 	float: left;
 	padding: 0px 30px;
 	margin: 2.8rem;
 }
-/*=============================================
-TIPOS DE OFERTAS
+/*TIPOS DE OFERTAS
 =============================================*/
-#tipos{
-	background: #242424;
-}
+#tipos{ background: #242424; }
+
 #tipos .row{
 	padding-top: 2.5rem;
 	padding-bottom: 2.5rem;
 }
-#tipos .tip{
-	overflow: hidden;
-}
+#tipos .tip{ overflow: hidden; }
+
 #tipos .tip .imagen{
 	cursor:pointer;
 	transition:.6s;
-
 	transform: scale(1);
 	transition: all 500ms ease-in-out;
 }
 #tipos .tip .imagen:hover{
 	transition:.6s;
 	opacity: .3;
-
 	transform: scale(1.2);
 }
 #tipos .tip a:hover{
@@ -209,25 +200,20 @@ TIPOS DE OFERTAS
 	bottom: 90px;
 	width: 30.65%;
 }
-/*=============================================
-LISTA DE PRODUCTOS
+/*LISTA DE PRODUCTOS
 =============================================*/
-#lista-productos{
-	background: #ebe7df;
-}
-#lista-productos .row{
-	padding-bottom: 3.5rem;
-}
-#lista-productos h4{
-	padding-top: 1.5rem;
-}
+#lista-productos{ background: #ebe7df; }
+
+#lista-productos .row{ padding-bottom: 3.5rem; }
+
+#lista-productos h4{ padding-top: 1.5rem; font-size: 3.2rem; }
+
 #lista-productos .boton{
 	margin-top: 1.5rem;
 	color: #bfb9ab;
 }
-#lista-productos .producto{
-	background: white;
-}
+#lista-productos .producto{ background: white; }
+
 #lista-productos hr{
 	margin: 0;
 	color: #bfb9ab;
@@ -259,16 +245,12 @@ LISTA DE PRODUCTOS
 	margin: 0;
 	border: 1px solid #bfb9ab;
 }
-/*=============================================
-CUADROS CON TEXTOS
+/*CUADROS CON TEXTOS
 =============================================*/
-#texto-principal{
-	background: #ebe7df;
-}
-#texto-principal .cuadrado{
-	padding: 1.5rem 0rem;
-	max-height: 235px;
-}
+#texto-principal{ background: #ebe7df; }
+
+#texto-principal .cuadrado{ padding: 1.5rem 0rem; }
+
 #texto-principal .cuadro{
 	padding: 1.5rem;
 	background: rgba(255, 255, 255, 0.5);
@@ -285,16 +267,13 @@ CUADROS CON TEXTOS
 	font-size: 1.2rem;
 	margin: 0;
 }
-/*=============================================
-CUADROS CON TEXTOS DOS
+/*CUADROS CON TEXTOS DOS
 =============================================*/
-#texto-secundario{
-	background: #242424;
-}
+#texto-secundario{ background: #242424; }
+
 #texto-secundario .cuadrado-negro{
 	padding-top: 4.7rem;
 	padding-bottom: 4.7rem;
-	max-height: 246px;
 }
 #texto-secundario p{
 	text-align: justify;
@@ -306,6 +285,7 @@ CUADROS CON TEXTOS DOS
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #9e9e9e;
+	margin-bottom: 1rem;
 }
 #texto-secundario #galeria ul li img{
 	width: 76px;
@@ -326,15 +306,12 @@ CUADROS CON TEXTOS DOS
 	color: #1c1c1c;
 	border: 1px solid #1c1c1c;
 }
-/*=============================================
-CONTACTENOS
+/*CONTACTENOS
 =============================================*/
-#contactenos{
-	background: #242424;
-}
-#contactenos .row{
-	padding-bottom: 3.5rem;
-}
+#contactenos{ background: #242424; }
+
+#contactenos .row{ padding-bottom: 3.5rem; }
+
 #contactenos form{
 	padding-top: 3.5rem;
 	margin: 0;
@@ -360,9 +337,8 @@ CONTACTENOS
 	padding-top: 3.5rem;
 	margin: 0;
 }
-#contactenos ul, li{
-	margin-bottom: 0;
-}
+#contactenos ul, li{ margin-bottom: 0; }
+
 #contactenos .redes ul li a{
 	float: left;
 	margin: 4px;
@@ -388,17 +364,112 @@ CONTACTENOS
 #contactenos .redes ul li:last-child a:hover{
 	background: rgb(0, 90, 8);
 }
-/*=============================================
-FOOTER
+/*FOOTER
 =============================================*/
-footer{
-	background: #2e2e2e;
-}
+footer{ background: #2e2e2e; }
+
 .footer{
 	padding: 2.5rem;
 	color: #acacac;
 	font-size: 1.2rem;
 }
-.footer #secundario a{
-	color: #acacac;
+.footer #secundario a{ color: #acacac; }
+/*REPONSIVE MEDIA
+=============================================*/
+@media (min-width: 400px) {
+	.one.columns{ width: 4.66666666667%; }
+	.two.columns{ width: 13.3333333333%; }
+	.three.columns{ width: 47%; margin-left: 1.3%; }
+	.four.columns{ width: 30.6666666667%; }
+	.five.columns{ width: 39.3333333333%; margin-left: 4%; }
+	.six.columns{ width: 88%; margin-left: 1.3%; }
+
+	#navegacion #principal a{ padding: 0px 30px; }
+}
+@media (min-width: 550px) {
+	.one.columns{ width: 10.66666666667%; }
+	.two.columns{ width: 35.3333333333%; }
+	.three.columns{ width: 47%; margin-left: 1.3%; }
+	.four.columns{ width: 30.6666666667%; }
+	.five.columns{ width: 57.3333333333%; margin-left: 0%; }
+	.six.columns{ width: 88%; margin-left: 4%; }
+	.seven.columns{ width: 100%; }
+	.eight.columns{ width: 45.3333333333%; }
+	.nine.columns{ width: 100%; }
+	.eleven.columns{ width: 100%; margin-left: 0%; }
+
+	header form input#buscar{ padding: 0px; width: 84px; }
+	#navegacion #principal a{ padding: 0px 30px; display: block; }
+	#slide ul li .contenido-slide { bottom: 46px; }
+		#slide p{ font-size: 1.2rem; }
+		#slide h1{ font-size: 1.9rem; }
+	#promo ul li { padding: 0px 0px; margin: 0.8rem; }
+	#tipos a { padding: 5px 5px; bottom: 51px; font-size: 15px; }
+	#lista-productos h4{ font-size: 2.2rem; }
+}
+@media (min-width: 750px) {
+	.one.columns{ width: 8%;}
+	.two.columns{ width: 18.3333333333%; margin-left: 0%; }
+	.three.columns{ width: 25%; margin-left: 1.3%; }
+	.four.columns{ width: 30.6666666667%; }
+	.five.columns{ width: 60.333333%; margin-left: 1%; }
+	.six.columns{ width: 45.8%; margin-left: 1.3%; }
+	.seven.columns{ width: 40%; }
+	.eight.columns{ width: 60.3333333333%; }
+	.nine.columns{ width: 80%; }
+	.eleven.columns{ width: 30.6666666667%; margin-left: 2%; }
+
+	header form input#buscar{ padding: 6px; width: 0px; }
+	#navegacion #principal a{ padding: 0px 12px; display: inline-block; }
+	#slide ul li .contenido-slide { bottom: 55px; }
+		#slide p{ font-size: 1.5rem; }
+		#slide h1{ font-size: 2.5rem; }
+	#promo ul li { padding: 0px 0px; margin: 2.4rem; }
+	#tipos a { padding: 5px 5px; bottom: 58px; font-size: 22px; }
+	#lista-productos h4{ font-size: 3.2rem; }
+	#texto-secundario #galeria ul li img{ margin: 4px; }
+}
+@media (min-width: 1000px) {
+	.one.columns{ width: 4.66666666667%; }
+	.two.columns{ width: 14.3333333333%; margin-left: 0%; }
+	.three.columns{ width: 25.5%; margin-left: 1.5%; }
+	.four.columns{ width: 30.6666666667%; }
+	.five.columns{ width: 60.3333333333%; margin-left: 4%; }
+	.six.columns{ width: 44%; margin-left: 1.5%; }
+	.seven.columns{ width: 30.6666666667%; }
+	.eight.columns{ width: 46.3333333333%; }
+	.nine.columns{ width: 84%; }
+	.eleven.columns{ width: 30.6666666667%; margin-left: 2%; }
+
+	header form input#buscar{ padding: 6px; width: 0px; }
+	#navegacion #principal a{ padding: 0px 30px; display: inline-block; }
+	#slide ul li .contenido-slide { bottom: 50px; }
+		#slide p{ font-size: 2.2rem; }
+		#slide h1{ font-size: 4rem; }
+	#promo ul li { padding: 0px 17px; margin: 2.8rem; }
+	#tipos a { padding: 10px 20px; bottom: 72px; font-size: 22px; }
+	#lista-productos h4{ font-size: 3.2rem; }
+	#texto-secundario #galeria ul li img{ margin: 2px; }
+}
+@media (min-width: 1200px) {
+	.one.columns{ width: 4.66666666667%; }
+	.two.columns{ width: 13.3333333333%; }
+	.three.columns{ width: 22%; margin-left: 2.5%; }
+	.four.columns{ width: 30.6666666667%; }
+	.five.columns{ width: 60.3333333333%; margin-left: 4%; }
+	.six.columns{ width: 48%; margin-left: 2.5%; }
+	.seven.columns{ width: 30.6666666667%; }
+	.eight.columns{ width: 40.3333333333%; }
+	.nine.columns{ width: 74.0%; }
+	.eleven.columns{ width: 30.6666666667%; margin-left: 2%; }
+
+	header form input#buscar{ padding: 6px; width: 0px; }
+	#navegacion #principal a{ padding: 0px 30px; display: inline-block; }
+	#slide ul li .contenido-slide { bottom: 90px; }
+		#slide p{ font-size: 2.2rem; }
+		#slide h1{ font-size: 4rem; }
+	#promo ul li { padding: 0px 30px; margin: 2.8rem; }
+	#tipos a { padding: 10px 20px; bottom: 90px; font-size: 22px; }
+	#lista-productos h4{ font-size: 3.2rem; }
+	#texto-secundario #galeria ul li img{ margin: 4px; }
 }
