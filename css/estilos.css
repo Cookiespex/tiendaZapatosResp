@@ -9,7 +9,6 @@
 /*CABEZOTE
 =============================================*/
 #cabezote{ background: #242424; }
-
 header a#icono{
 	font-family: 'Oswald', sans-serif; 
 	font-weight: 100; 
@@ -18,10 +17,8 @@ header a#icono{
 	font-size: 30px;
 	max-height: 45px;
 }
-header form {
-	padding: 0rem;
-	margin: 0rem;
-}
+header form { padding: 0rem; margin: 0rem; }
+
 header form input#buscar{
 	background: #2e2e2e;
 	border: 0px;
@@ -31,11 +28,9 @@ header form input#buscar{
 	color: #6b6b6b;
 	padding: 6px;
 }
-header form a#registrar, #lupa{
-	color: #6b6b6b;
-	font-size: 13px;
-}
-header #btnMovil span{
+header form a#registrar, #lupa{ color: #6b6b6b; font-size: 13px; }
+
+header #btnMenu span{
 	width:40px;
 	text-align: center;
 	padding:8px 0px;
@@ -46,7 +41,7 @@ header #btnMovil span{
 /*BARRA DE NAVEGACIÓN
 =============================================*/
 #navegacion{ background: #ffffff; }
-#navegacion #principal a{
+#navegacion #principal a.aNav{
 	color: #242424;
 	line-height: 60px;
 	padding: 0px 30px;
@@ -71,7 +66,7 @@ header #btnMovil span{
     position: absolute;
     right:0;
     top:100%;
-    z-index: 2;
+    z-index: 10;
     background-color: white;
     padding: 20px;
     min-height: 400px;
@@ -100,14 +95,10 @@ header #btnMovil span{
 	width: 100%;
 	overflow: hidden;
 }
-#slide h1{
-	font-size: 4rem;
-	color: #242424;
-}
-#slide p{
-	font-size: 2.2rem;
-	color: #383837;
-}
+#slide h1{ font-size: 4rem; color: #242424; }
+
+#slide p{ font-size: 2.2rem; color: #383837; }
+
 #slide ul{
 	position:relative;
 	left:0%;
@@ -168,10 +159,8 @@ header #btnMovil span{
 =============================================*/
 #tipos{ background: #242424; }
 
-#tipos .row{
-	padding-top: 2.5rem;
-	padding-bottom: 2.5rem;
-}
+#tipos .row{ padding: 2.5rem 0rem; }
+
 #tipos .tip{ overflow: hidden; }
 
 #tipos .tip .imagen{
@@ -185,10 +174,8 @@ header #btnMovil span{
 	opacity: .3;
 	transform: scale(1.2);
 }
-#tipos .tip a:hover{
-	transition:.6s;
-	opacity: .8;
-}
+#tipos .tip a:hover{ transition:.6s; opacity: .8; }
+
 #tipos a{
 	position: absolute;
 	z-index: 1;
@@ -208,43 +195,45 @@ header #btnMovil span{
 
 #lista-productos h4{ padding-top: 1.5rem; font-size: 3.2rem; }
 
-#lista-productos .boton{
-	margin-top: 1.5rem;
-	color: #bfb9ab;
-}
+#lista-productos .boton{ margin-top: 1.5rem; color: #bfb9ab; }
+
 #lista-productos .producto{ background: white; }
 
-#lista-productos hr{
-	margin: 0;
-	color: #bfb9ab;
-}
-#lista-productos center{
-	width: 100%;   
+#lista-productos .producto .ampliar{ overflow: hidden; }
+
+#lista-productos .producto .ampliar .imge{
+	cursor: pointer;
+	transition:.6s;
+	transform: scale(1);
 	transition: all 500ms ease-in-out;
-	opacity: 1;
 }
-#lista-productos center:hover{
-	transform:translate(0px);
-	opacity: 1;
+#lista-productos .producto .ampliar .imge:hover{
+	transition:.6s;
+	transform: scale(1.2);
 }
+#lista-productos hr{ margin: 0; color: #bfb9ab; }
+
+#lista-productos .lista-items .icon{ width: 3rem; margin: -2px; }
+
 .info-producto{
-	width: 100%;   
+	width: 100%; 
+	max-height: 10px; 
 	transition: all 500ms ease-in-out;
 	opacity: 0;
+	cursor: pointer;
 }
-#lista-productos .info-producto:hover{
-	transform:translate(0px,-20px);
-	opacity: 1;
+#lista-productos .info-producto:hover{ transform:translate(0px,-20px); opacity: 1; }
+
+.lista-items{ margin-top: 2px; text-align: center; }
+
+#lista-productos .precio{
+	position: absolute;
+	float: left;
+	background: rgb(12, 204, 108);
+	color:white;
 }
-.lista-items{
-	margin-top: 2px; 
-	text-align: center;
-	background: white;
-}
-#linea1{
-	margin: 0;
-	border: 1px solid #bfb9ab;
-}
+
+#linea1{ margin: 0; border: 1px solid #bfb9ab; }
 /*CUADROS CON TEXTOS
 =============================================*/
 #texto-principal{ background: #ebe7df; }
@@ -255,18 +244,11 @@ header #btnMovil span{
 	padding: 1.5rem;
 	background: rgba(255, 255, 255, 0.5);
 }
-#texto-principal h2{
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-#texto-principal h6{
-	font-size: 1.4rem;
-	font-weight: bold;
-}
-#texto-principal p{
-	font-size: 1.2rem;
-	margin: 0;
-}
+#texto-principal h2{ font-size: 1.5rem; font-weight: bold; }
+
+#texto-principal h6{ font-size: 1.4rem; font-weight: bold; }
+
+#texto-principal p{ font-size: 1.2rem; margin: 0; }
 /*CUADROS CON TEXTOS DOS
 =============================================*/
 #texto-secundario{ background: #242424; }
@@ -293,14 +275,10 @@ header #btnMovil span{
 	float: left;
 	margin: 4px;
 }
-#texto-secundario #galeria ul li img{
-	cursor:pointer;
-	transition:.6s;
-}
-#texto-secundario #galeria ul li img:hover{
-	transition:.6s;
-	opacity: .3;
-}
+#texto-secundario #galeria ul li img{ cursor:pointer; transition:.6s; }
+
+#texto-secundario #galeria ul li img:hover{ transition:.6s; opacity: .3; }
+
 #linea2{
 	margin: 0;
 	color: #1c1c1c;
@@ -312,10 +290,8 @@ header #btnMovil span{
 
 #contactenos .row{ padding-bottom: 3.5rem; }
 
-#contactenos form{
-	padding-top: 3.5rem;
-	margin: 0;
-}
+#contactenos form{ padding-top: 3.5rem; margin: 0; }
+
 #contactenos form input#email{
 	background: #2e2e2e;
 	border: 0;
@@ -333,10 +309,8 @@ header #btnMovil span{
 	padding-top: 6px;
 	font-weight: bold;
 }
-#contactenos .redes{
-	padding-top: 3.5rem;
-	margin: 0;
-}
+#contactenos .redes{ padding-top: 3.5rem; margin: 0; }
+
 #contactenos ul, li{ margin-bottom: 0; }
 
 #contactenos .redes ul li a{
@@ -374,32 +348,57 @@ footer{ background: #2e2e2e; }
 	font-size: 1.2rem;
 }
 .footer #secundario a{ color: #acacac; }
-/*REPONSIVE MEDIA
+/*=============================================
+REPONSIVE MEDIA
 =============================================*/
-@media (min-width: 400px) {
-	.one.columns{ width: 4.66666666667%; }
-	.two.columns{ width: 13.3333333333%; }
-	.three.columns{ width: 47%; margin-left: 1.3%; }
-	.four.columns{ width: 30.6666666667%; }
-	.five.columns{ width: 39.3333333333%; margin-left: 4%; }
-	.six.columns{ width: 88%; margin-left: 1.3%; }
+@media (max-width: 549px) {
+	.one.column{ width: 100%; display: block; text-align: center;  }
+	.one.columns{ width: 100%; }
+	.two.columns{ width: 38.3333333333%; }
+	.three.columns{ width: 100%; margin-left: 1.3%; }
+	.four.columns{ width: 100%; }
+	.five.columns{ width: 39.3333333333%; margin-left: 4%; display: none; }
+	.six.columns{ width: 100%; margin-left: 1.3%; }
+	.seven.columns{ width: 100%; }
+	.eight.columns{ width: 100%; }
+	.nine.columns{ width: 100%; display: none; }
+	.ten.columns{ width: 100%; display: none; }
+	.eleven.columns{ width: 100%; margin-left: 0%; }
 
-	#navegacion #principal a{ padding: 0px 30px; }
+	header a#icono{ width: 100%; text-align: center; }
+	header form input#buscar{ padding: 0px; width: 84px; }
+	#navegacion #principal a.aNav{ padding: 0px 30px; display: block; }
+	#slide ul li .contenido-slide { bottom: 46px; }
+		#slide p{ font-size: 1.2rem; }
+		#slide h1{ font-size: 1.9rem; }
+	#promo ul li { padding: 0px 0px; margin: 0.8rem; }
+	#tipos a { display: none; }
+	#lista-productos h4{ font-size: 2rem; }
+	#lista-productos .boton{ 
+		margin-top: 1.5rem; 
+		color: #bfb9ab;
+		height: 25px;
+		line-height: 25px;
+		padding: 0 10px;
+		font-size: 10px;
+	}
 }
-@media (min-width: 550px) {
-	.one.columns{ width: 10.66666666667%; }
+@media (max-width:749px) and (min-width: 550px) {
+	.one.column{ width: 10.66666666667%; display: block; }
+	.one.columns{ width: 100%; }
 	.two.columns{ width: 35.3333333333%; }
 	.three.columns{ width: 47%; margin-left: 1.3%; }
 	.four.columns{ width: 30.6666666667%; }
-	.five.columns{ width: 57.3333333333%; margin-left: 0%; }
+	.five.columns{ width: 57.3333333333%; margin-left: 0%; display: none; }
 	.six.columns{ width: 88%; margin-left: 4%; }
 	.seven.columns{ width: 100%; }
 	.eight.columns{ width: 45.3333333333%; }
-	.nine.columns{ width: 100%; }
+	.nine.columns{ width: 100%; display: none; }
+	.ten.columns{ width: 100%; display: none; }
 	.eleven.columns{ width: 100%; margin-left: 0%; }
 
 	header form input#buscar{ padding: 0px; width: 84px; }
-	#navegacion #principal a{ padding: 0px 30px; display: block; }
+	#navegacion #principal a.aNav{ padding: 0px 30px; display: block; }
 	#slide ul li .contenido-slide { bottom: 46px; }
 		#slide p{ font-size: 1.2rem; }
 		#slide h1{ font-size: 1.9rem; }
@@ -407,69 +406,76 @@ footer{ background: #2e2e2e; }
 	#tipos a { padding: 5px 5px; bottom: 51px; font-size: 15px; }
 	#lista-productos h4{ font-size: 2.2rem; }
 }
-@media (min-width: 750px) {
-	.one.columns{ width: 8%;}
+@media (max-width:991px) and (min-width: 750px) {
+	.one.column{ width: 8%; display:none; }
+	.one.columns{ width: 100%;}
 	.two.columns{ width: 18.3333333333%; margin-left: 0%; }
 	.three.columns{ width: 25%; margin-left: 1.3%; }
 	.four.columns{ width: 30.6666666667%; }
-	.five.columns{ width: 60.333333%; margin-left: 1%; }
+	.five.columns{ width: 55.333333%; margin-left: 1%; display: inline-block; }
 	.six.columns{ width: 45.8%; margin-left: 1.3%; }
 	.seven.columns{ width: 40%; }
 	.eight.columns{ width: 60.3333333333%; }
-	.nine.columns{ width: 80%; }
+	.nine.columns{ width: 100%; display: inline-block; }
+	.ten.columns{ width: 100%; display: inline-block; }
 	.eleven.columns{ width: 30.6666666667%; margin-left: 2%; }
 
-	header form input#buscar{ padding: 6px; width: 0px; }
-	#navegacion #principal a{ padding: 0px 12px; display: inline-block; }
+	header form input#buscar{ padding: 6px; width: 150px; }
+	#navegacion #principal a.aNav{ padding: 0px 12px; display: inline-block; }
 	#slide ul li .contenido-slide { bottom: 55px; }
 		#slide p{ font-size: 1.5rem; }
 		#slide h1{ font-size: 2.5rem; }
 	#promo ul li { padding: 0px 0px; margin: 2.4rem; }
 	#tipos a { padding: 5px 5px; bottom: 58px; font-size: 22px; }
-	#lista-productos h4{ font-size: 3.2rem; }
+	#lista-productos h4{ font-size: 2.5rem; }
 	#texto-secundario #galeria ul li img{ margin: 4px; }
 }
-@media (min-width: 1000px) {
-	.one.columns{ width: 4.66666666667%; }
+@media (max-width: 1199px) and (min-width:992px) {
+	.one.column{ width: 4.66666666667%;  display:none; }
+	.one.columns{ width: 100%; }
 	.two.columns{ width: 14.3333333333%; margin-left: 0%; }
 	.three.columns{ width: 25.5%; margin-left: 1.5%; }
 	.four.columns{ width: 30.6666666667%; }
-	.five.columns{ width: 60.3333333333%; margin-left: 4%; }
+	.five.columns{ width: 42.3333333333%; margin-left: 4%; display: inline-block; }
 	.six.columns{ width: 44%; margin-left: 1.5%; }
 	.seven.columns{ width: 30.6666666667%; }
 	.eight.columns{ width: 46.3333333333%; }
-	.nine.columns{ width: 84%; }
+	.nine.columns{ width: 100%; display: inline-block; }
+	.ten.columns{ width: 100%; display: inline-block; }
 	.eleven.columns{ width: 30.6666666667%; margin-left: 2%; }
 
-	header form input#buscar{ padding: 6px; width: 0px; }
-	#navegacion #principal a{ padding: 0px 30px; display: inline-block; }
+	header form input#buscar{ padding: 6px; width: 150px; }
+	#navegacion #principal a.aNav{ padding: 0px 30px; display: inline-block; }
 	#slide ul li .contenido-slide { bottom: 50px; }
 		#slide p{ font-size: 2.2rem; }
 		#slide h1{ font-size: 4rem; }
-	#promo ul li { padding: 0px 17px; margin: 2.8rem; }
+	#promo ul li { padding: 0px 15px; margin: 2.8rem; }
 	#tipos a { padding: 10px 20px; bottom: 72px; font-size: 22px; }
 	#lista-productos h4{ font-size: 3.2rem; }
 	#texto-secundario #galeria ul li img{ margin: 2px; }
 }
 @media (min-width: 1200px) {
-	.one.columns{ width: 4.66666666667%; }
+	.one.column{ width: 4.66666666667%;  display:none; }
+	.one.columns{ width: 100%; }
 	.two.columns{ width: 13.3333333333%; }
 	.three.columns{ width: 22%; margin-left: 2.5%; }
 	.four.columns{ width: 30.6666666667%; }
-	.five.columns{ width: 60.3333333333%; margin-left: 4%; }
+	.five.columns{ width: 42.3333333333%; margin-left: 4%; display: inline-block; }
 	.six.columns{ width: 48%; margin-left: 2.5%; }
 	.seven.columns{ width: 30.6666666667%; }
 	.eight.columns{ width: 40.3333333333%; }
-	.nine.columns{ width: 74.0%; }
+	.nine.columns{ width: 100%; display: inline-block; }
+	.ten.columns{ width: 100%; display: inline-block; }
 	.eleven.columns{ width: 30.6666666667%; margin-left: 2%; }
 
-	header form input#buscar{ padding: 6px; width: 0px; }
-	#navegacion #principal a{ padding: 0px 30px; display: inline-block; }
+	header form input#buscar{ padding: 6px; width: 200px; }
+	#navegacion #principal a.aNav{ padding: 0px 30px; display: inline-block; }
 	#slide ul li .contenido-slide { bottom: 90px; }
 		#slide p{ font-size: 2.2rem; }
 		#slide h1{ font-size: 4rem; }
 	#promo ul li { padding: 0px 30px; margin: 2.8rem; }
 	#tipos a { padding: 10px 20px; bottom: 90px; font-size: 22px; }
 	#lista-productos h4{ font-size: 3.2rem; }
+		#lista-productos .precio{ margin: -1.4rem 0.9rem; padding: 13px 10px; }
 	#texto-secundario #galeria ul li img{ margin: 4px; }
 }

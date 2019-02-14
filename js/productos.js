@@ -28,6 +28,7 @@ function leerDatosProducto(producto) {
     //lee la información del producto
     const infoProducto = {
         imagen: producto.querySelector('img').src,
+        precio: producto.querySelector('.precio span').textContent,
         titulo: producto.querySelector('center').textContent,
         id: producto.querySelector('a').getAttribute('data-id')
     }
@@ -41,6 +42,7 @@ function insertarCarrito(producto) {
             <img src="${producto.imagen}" width=100 >
         </td>
         <td>${producto.titulo}</td>
+        <td>${producto.precio}</td>
         <td>
             <a href="#" class="borrar-producto" data-id="${producto.id}">X</a>
         </td>
@@ -93,6 +95,7 @@ function leerLocalStorage() {
                 <img src="${producto.imagen}" width=100 >
             </td>
             <td>${producto.titulo}</td>
+            <td>${producto.precio}</td>
             <td>
                 <a href="#" class="borrar-producto" data-id="${producto.id}">X</a>
             </td>

@@ -24,63 +24,64 @@
 </head>
 <body>
     
-    <header id="cabezote">
-        <div class="container">
-            <div class="row">
-                <div class="three columns u-pull-left">
-                    <a id="icono" href="#">FOOSESHOES</a>
+    <div id="fijo">
+        <header id="cabezote">
+            <div class="container">
+                <div class="row">
+                    <div class="three columns u-pull-left">
+                        <a id="icono" href="#">FOOSESHOES</a>
+                    </div>
+                    <div class="five columns u-pull-right">
+                        <form id="busqueda">
+                            <input type="search" placeholder="    Buscar" id="buscar">
+                            <label id="lupa" class="fa fa-search"></label>
+                            <a id="registrar" href="#">LOGIN or REGISTER</a>
+                        </form>
+                    </div>
+                    <div id="btnMenu" class="one column u-pull-right">	
+                        <span class="fa fa-bars"></span>	
+                    </div>
                 </div>
-                <div class="five columns">
-                    <form id="busqueda">
-                        <input type="search" placeholder="    Buscar" id="buscar">
-                        <label id="lupa" class="fa fa-search"></label>
-                        <a id="registrar" href="#">LOGIN or REGISTER</a>
-                    </form>
-                </div>
-                <div id="btnMovil" class="one columns u-pull-right">	
-                    <span class="fa fa-bars"></span>	
-                </div>
-            </div>
-        </div>         
-    </header>
+            </div>         
+        </header>
 
-    <div id="navegacion">
-        <div class="container">
-            <div class="row">
-                <nav id="principal" class="nine columns u-pull-left">
-                    <a href="#">Home</a>
-                    <a href="#">Products</a>
-                    <a href="#">About</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                </nav>
-                <div id="carro" class="two columns u-pull-right">
-                    <ul>
-                        <li><span class="fa fa-star" id="fa-star"></span></li>
-                        <li class="submenu">
-                            <span class="fa fa-shopping-cart" id="fa-carrito"></span>
-                            <div id="carrito">
-                                <table id="lista-carrito" class="u-full-width">
-                                    <thead>
-                                        <tr>
-                                            <th>Imagen</th>
-                                            <th>Nombre</th>
-                                            <th>Precio</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                            </div>
-                        </li>
-                    </ul>
+        <div id="navegacion">
+            <div class="container">
+                <div class="row">
+                    <nav id="principal" class="nine columns u-pull-left">
+                        <a class="aNav" href="#cabezote">Home</a>
+                        <a class="aNav" href="#lista-productos">Products</a>
+                        <a class="aNav" href="#tipos">About</a>
+                        <a class="aNav" href="#texto-principal">Pages</a>
+                        <a class="aNav" href="#texto-secundario">Blog</a>
+                        <a class="aNav" href="#contactenos">Contact</a>
+                        <div id="carro" class="two columns u-pull-right">
+                            <ul>
+                                <li><span class="fa fa-star" id="fa-star"></span></li>
+                                <li class="submenu">
+                                    <span class="fa fa-shopping-cart" id="fa-carrito"></span>
+                                    <div id="carrito">
+                                        <table id="lista-carrito" class="u-full-width">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </div>
-
     <div id="slide">
         <div class="row">
             <ul>
@@ -135,7 +136,7 @@
     <div id="promo">
         <div class="container">
             <div class="row">
-                <div class="twelve columns">
+                <div class="ten columns">
                     <ul>
                         <li>Pink Shoes</li>
                         <li>Anna Field</li>
@@ -176,8 +177,9 @@
             <div class="row">
                 <div class="four columns">
                     <div id="producto" class="producto">
-                        <img src="img/producto01.png" class="img u-full-width">
+                        <div class="ampliar"><img src="img/producto01.png" class="imge u-full-width"></div>
                         <hr>
+                        <p class="precio"><span>$145,99</span></p>
                         <center>Event&Odd</center>
                         <div id="info-producto" class="info-producto">
                             <ul class="lista-items">
@@ -192,8 +194,9 @@
                 </div>
                 <div class="four columns">
                     <div id="producto" class="producto">
-                        <img src="img/producto01.png" class="img u-full-width">
+                        <div class="ampliar"><img src="img/producto01.png" class="imge u-full-width"></div>
                         <hr>
+                        <p class="precio"><span>$145,99</span></p>
                         <center>Buffalo Decolleté</center>
                         <div id="info-producto" class="info-producto">
                             <ul class="lista-items">
@@ -208,8 +211,9 @@
                 </div>
                 <div class="four columns">
                     <div id="producto" class="producto">
-                        <img src="img/producto01.png" class="img u-full-width">
+                        <div class="ampliar"><img src="img/producto01.png" class="imge u-full-width"></div>
                         <hr>
+                        <p class="precio"><span>$145,99</span></p>
                         <center>Event&Odd</center>
                         <div id="info-producto" class="info-producto">
                             <ul class="lista-items">
@@ -230,8 +234,9 @@
             <div class="row">
                 <div class="four columns">
                     <div id="producto" class="producto">
-                        <img src="img/producto01.png" class="img u-full-width">
+                        <div class="ampliar"><img src="img/producto01.png" class="imge u-full-width"></div>
                         <hr>
+                        <p class="precio"><span>$145,99</span></p>
                         <center>Event&Odd</center>
                         <div id="info-producto" class="info-producto">
                             <ul class="lista-items">
@@ -246,8 +251,9 @@
                 </div>
                 <div class="four columns">
                     <div id="producto" class="producto">
-                        <img src="img/producto01.png" class="img u-full-width">
+                        <div class="ampliar"><img src="img/producto01.png" class="imge u-full-width"></div>
                         <hr>
+                        <p class="precio"><span>$145,99</span></p>
                         <center>Buffalo Decolleté</center>
                         <div id="info-producto" class="info-producto">
                             <ul class="lista-items">
@@ -262,8 +268,9 @@
                 </div>
                 <div class="four columns">
                     <div id="producto" class="producto">
-                        <img src="img/producto01.png" class="img u-full-width">
+                        <div class="ampliar"><img src="img/producto01.png" class="imge u-full-width"></div>
                         <hr>
+                        <p class="precio"><span>$145,99</span></p>
                         <center>Event&Odd</center>
                         <div id="info-producto" class="info-producto">
                             <ul class="lista-items">
@@ -409,6 +416,7 @@
     <script src="js/productos.js"></script> 
     <script src="js/galeria.js"></script>
     <script src="js/botonMenu.js"></script>   
+    <script src="js/navStatica.js"></script>
 
 </body>
 </html>
